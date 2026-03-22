@@ -5,8 +5,15 @@
     <link>https://yywar.github.io/strate-weekly</link>
     <description>Analyse tech hebdomadaire. Ce que les tendances révèlent, pas ce qu'elles annoncent.</description>
     <language>fr</language>
-    <lastBuildDate>Sun, 22 Mar 2026 22:33:52 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Mar 2026 22:54:23 +0000</lastBuildDate>
     <atom:link href="https://yywar.github.io/strate-weekly/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>GrapheneOS dit non : quand un OS refuse de vérifier votre âge</title>
+      <link>https://yywar.github.io/strate-weekly/articles/grapheneos-age-verification.html</link>
+      <guid>https://yywar.github.io/strate-weekly/articles/grapheneos-age-verification.html</guid>
+      <pubDate>2026-03-22T00:00:00+00:00</pubDate>
+      <description>GrapheneOS refuse de se conformer aux lois de vérification d'âge brésiliennes et californiennes. À trois semaines d'un partenariat Motorola, le projet open-source pose un choix qui concerne tout le monde : un OS doit-il savoir quel âge vous avez ?</description>
+    </item>
     <item>
       <title>Delve : 494 rapports SOC 2 identiques — anatomie d'une fraude à la compliance industrielle</title>
       <link>https://yywar.github.io/strate-weekly/articles/delve-soc2-fraude.html</link>

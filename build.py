@@ -19,6 +19,14 @@ OUT_ARTICLES = ROOT / "articles"
 # Article metadata — add new articles here
 ARTICLES = [
     {
+        "slug": "grapheneos-age-verification",
+        "title": "GrapheneOS dit non : quand un OS refuse de vérifier votre âge",
+        "subtitle": "Brésil, Californie, Motorola — la vérification d'âge au niveau OS est la prochaine Crypto War",
+        "date": "2026-03-22",
+        "summary": "GrapheneOS refuse de se conformer aux lois de vérification d'âge brésiliennes et californiennes. À trois semaines d'un partenariat Motorola, le projet open-source pose un choix qui concerne tout le monde : un OS doit-il savoir quel âge vous avez ?",
+        "src": "article_004_grapheneos.md",
+    },
+    {
         "slug": "delve-soc2-fraude",
         "title": "Delve : 494 rapports SOC 2 identiques — anatomie d'une fraude à la compliance industrielle",
         "subtitle": "Quand l'IA réduit à zéro le coût de production d'un signal de confiance",
