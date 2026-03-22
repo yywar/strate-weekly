@@ -19,6 +19,14 @@ OUT_ARTICLES = ROOT / "articles"
 # Article metadata — add new articles here
 ARTICLES = [
     {
+        "slug": "infrastructure-prend-parti",
+        "title": "Quand l'infrastructure prend parti",
+        "subtitle": "DNS, publicité cognitive, supply chain compromise, souveraineté locale — quatre actes d'une transition de phase",
+        "date": "2026-03-23",
+        "summary": "Cloudflare reclassifie archive.today en botnet. OpenAI cible les pubs sur votre raisonnement. Trivy est retourné contre ses utilisateurs. Project Nomad installe une infrastructure locale en deux commandes. En six semaines, la couche invisible a cessé d'être neutre.",
+        "src": "article_005_infrastructure.md",
+    },
+    {
         "slug": "grapheneos-age-verification",
         "title": "GrapheneOS dit non : quand un OS refuse de vérifier votre âge",
         "subtitle": "Brésil, Californie, Motorola — la vérification d'âge au niveau OS est la prochaine Crypto War",

@@ -1,0 +1,157 @@
+# Quand l'infrastructure prend parti
+
+*Article #5 — Strate, 23 mars 2026*
+
+---
+
+## En six semaines, quatre avertissements
+
+Entre février et mars 2026, quatre événements indépendants ont convergé vers le même diagnostic. Cloudflare, le fournisseur DNS qui résout un quart du trafic web mondial, a classifié archive.today — un service d'archivage web utilisé par des journalistes, des chercheurs et des développeurs — comme un serveur de commande et contrôle de botnet. Sans annonce, sans explication technique, sans voie de recours. OpenAI a commencé à insérer des publicités dans ChatGPT, ciblées non pas sur votre historique de navigation ou votre profil social, mais sur le contenu de vos conversations — y compris ce que vous êtes en train de penser en temps réel. Une équipe d'attaquants sophistiqués a compromis Trivy, le scanner de vulnérabilités open source le plus déployé au monde, en retournant littéralement l'outil de protection contre les systèmes qu'il était censé protéger. Et Project Nomad a publié un bundle open source qui installe Wikipedia, des cartes, un système éducatif et un modèle de langage local sur votre propre machine — en deux commandes.
+
+Quatre histoires. Quatre secteurs. Aucun lien visible. Pourtant, elles racontent toutes la même chose : la couche d'infrastructure que tout le monde utilise et que personne ne regarde a cessé d'être neutre.
+
+Ce n'est pas une dérive progressive. C'est une transition de phase. L'infrastructure qui transportait l'information sans la juger s'est mise à la classifier, à la monétiser, et à être retournée contre ses utilisateurs. Simultanément, une autre infrastructure émerge en réponse — locale, autonome, déconnectée des points de contrôle centraux.
+
+Voici les quatre actes de cette transition.
+
+---
+
+## Acte I — Cloudflare décide ce qui est légitime
+
+Le 17 mars 2026, les utilisateurs d'archive.today — un service web qui sauvegarde des copies permanentes de pages internet, utilisé quotidiennement par des journalistes pour préserver des sources susceptibles de disparaître — ont découvert que le site ne se chargeait plus. Pas d'erreur 404. Pas de message de maintenance. Simplement... rien. La résolution DNS échouait silencieusement.
+
+L'explication est arrivée par la communauté, pas par Cloudflare. Le service de résolution DNS 1.1.1.2 — la version "sûre pour les familles" qui filtre les contenus malveillants — avait reclassifié archive.today dans la catégorie "Command and Control / Botnet." La même catégorie que les serveurs qui pilotent des réseaux d'ordinateurs infectés.
+
+Cloudflare n'a fourni aucune justification technique. Aucun rapport. Aucune notification préalable au service concerné. La discussion sur Hacker News — 360 points, 258 commentaires — a tourné autour d'une question simple : sur quelle base un fournisseur DNS peut-il décider qu'un service d'archivage web est un botnet ?
+
+La réponse technique est déprimante de simplicité : parce qu'il le peut. Le DNS est la couche de résolution qui transforme les noms de domaine en adresses IP. Contrôler cette couche, c'est contrôler ce qui existe sur internet. Un site non résolu par DNS est fonctionnellement invisible pour les utilisateurs qui dépendent de ce résolveur.
+
+Des contournements existent. Changer de résolveur DNS — utiliser 8.8.8.8 de Google, ou 9.9.9.9 de Quad9 — permet de retrouver l'accès. Mais le contournement n'est pas le point. Le point est que la couche d'infrastructure censée TRADUIRE des adresses a commencé à JUGER du contenu — et que ce jugement s'applique sans transparence, sans recours, et sans que la plupart des utilisateurs en soient conscients.
+
+Ce n'est pas une censure gouvernementale. Ce n'est pas une décision judiciaire. C'est une entreprise privée qui fournit de l'infrastructure à un quart du web et qui décide, unilatéralement, qu'un service d'archivage légitime appartient à la même catégorie qu'un réseau de machines zombies. Le terme technique est "soft takedown" — le service n'est pas bloqué, il est rendu invisible pour une partie significative des utilisateurs.
+
+L'effet collatéral est plus insidieux que le blocage lui-même. Quand archive.today est classifié "botnet", c'est le concept même d'archivage web indépendant qui est délégitimé. Pour un administrateur réseau qui consulte la classification Cloudflare, archive.today apparaît désormais dans la même catégorie que les véritables menaces. La classification DEVIENT la réalité — non pas parce qu'elle est correcte, mais parce que les systèmes en aval la consomment comme une donnée de fait.
+
+---
+
+## Acte II — OpenAI monétise votre pensée
+
+Le 9 février 2026, OpenAI a commencé à afficher des publicités dans ChatGPT pour les utilisateurs des plans Free et Go aux États-Unis. Avec 920 millions d'utilisateurs hebdomadaires et seulement 5% d'abonnés payants, le calcul économique est limpide : 95% des utilisateurs sont un inventaire publicitaire inexploité. Les plans Pro, Business, Enterprise et Education restent sans publicité — pour l'instant.
+
+Le modèle publicitaire lui-même n'a rien de révolutionnaire. La gratuité financée par la publicité est le modèle dominant du web depuis deux décennies. Ce qui est qualitativement nouveau, c'est le ciblage.
+
+### Ce que ChatGPT sait de vous
+
+Les publicités de ChatGPT sont ciblées selon trois axes : le sujet de la conversation en cours, vos conversations passées, et vos interactions passées avec les publicités. OpenAI affirme que "les publicités n'influencent pas les réponses que ChatGPT vous donne."
+
+Examinons ce que cela signifie concrètement.
+
+Google cible les publicités sur ce que vous **cherchez**. Quand vous tapez "meilleur vélo électrique", Google vous montre des publicités de vélos. Le ciblage porte sur l'intention d'achat — un signal comportemental explicite, que l'utilisateur produit consciemment en tapant une requête.
+
+Facebook cible les publicités sur ce que vous **êtes**. Votre âge, vos connexions, vos centres d'intérêt déclarés, votre activité sur la plateforme. Le ciblage porte sur le profil social — une construction identitaire que l'utilisateur accumule passivement.
+
+ChatGPT cible les publicités sur ce que vous **pensez**. Pas sur ce que vous cherchez — une requête est un signal d'intention, elle ne révèle pas le raisonnement. Pas sur qui vous êtes — un profil est une abstraction statique. Sur le processus de pensée lui-même : le raisonnement en cours, les hésitations, les reformulations, les angles morts que l'utilisateur explore en temps réel.
+
+C'est une différence de nature, pas de degré. Quand un utilisateur demande à ChatGPT "est-ce que je devrais changer de carrière ?", le système n'observe pas un clic sur un lien (Google) ni un like sur une page (Facebook). Il observe le raisonnement : les critères que l'utilisateur considère, les options qu'il envisage, les peurs qu'il articule. Et il peut placer une publicité exactement au moment où ce raisonnement est le plus malléable.
+
+### Le banner conversationnel
+
+Deux formats publicitaires sont déployés. Le premier est un carousel shopping classique, avec intégration de checkout Etsy et Shopify — l'utilisateur peut acheter sans quitter ChatGPT. Le second est plus inédit : le **banner conversationnel**. L'utilisateur peut poser des questions à ChatGPT **sur le produit annoncé**.
+
+L'IA qui vous aide à réfléchir devient, ponctuellement et de manière "clairement étiquetée", le vendeur du produit qui apparaît dans votre conversation. OpenAI affirme que les publicités sont "visuellement séparées" des réponses et n'influencent pas le contenu. Mais la séparation visuelle n'empêche pas la contamination contextuelle : quand un produit apparaît au milieu d'une réflexion, il devient un input de cette réflexion, qu'il soit étiqueté "sponsorisé" ou non.
+
+### Le précédent
+
+Le CPM est fixé à 60 dollars, avec un minimum d'engagement de 200 000 dollars. Ce pricing exclut les petits annonceurs — pour l'instant, seuls les annonceurs enterprise y ont accès. C'est un déploiement prudent : peu d'annonceurs, étiquetage clair, formats limités.
+
+Mais le précédent est posé. L'infrastructure de pensée assistée — l'outil que 920 millions de personnes utilisent pour réfléchir, rédiger, apprendre et décider — est désormais aussi une plateforme publicitaire. La promesse implicite de ChatGPT ("je t'aide à penser") coexiste avec l'incentive économique ("je te montre ce que mes clients veulent que tu voies pendant que tu penses").
+
+Le cadre réglementaire existant — ciblage comportemental, ciblage contextuel — n'a pas été conçu pour un système qui a accès au processus de raisonnement de l'utilisateur. La question n'est pas de savoir si les publicités "influencent" les réponses de ChatGPT. La question est de savoir si un système peut simultanément servir la réflexion de l'utilisateur et les intérêts commerciaux d'un annonceur, sans que le second ne déforme le premier — même involontairement, même structurellement.
+
+---
+
+## Acte III — Le gardien est compromis
+
+Le 19 mars 2026, Wiz Research, Socket et Boost Security ont publié simultanément l'analyse d'une attaque contre Trivy, le scanner de vulnérabilités open source d'Aqua Security. Trivy est l'outil que les équipes de sécurité utilisent pour vérifier que leur code, leurs conteneurs et leur infrastructure cloud ne contiennent pas de failles connues. C'est, littéralement, le gardien de la porte.
+
+Le groupe TeamPCP a compromis 75 des 76 tags de GitHub Actions de Trivy en force-pushant des versions malicieuses. Chaque organisation qui utilisait ces tags dans ses pipelines CI/CD — potentiellement des milliers d'entreprises — exécutait désormais du code contrôlé par les attaquants à chaque build.
+
+### Anatomie d'une attaque en trois étapes
+
+**Étape 1 : Collecte.** Le payload scrape la mémoire des processus via `/proc/<pid>/mem`, cherchant par pattern matching les secrets CI/CD : tokens GitHub, clés AWS, credentials Kubernetes, clés SSH. Cinquante chemins sensibles sont balayés systématiquement. Ce n'est pas un keylogger — c'est une aspiration méthodique de l'environnement d'exécution.
+
+**Étape 2 : Chiffrement.** Les données collectées sont chiffrées en AES-256-CBC avec enveloppe RSA-4096 hybride. Seul l'attaquant possède la clé privée RSA. Même en interceptant l'exfiltration, les données restent illisibles pour quiconque d'autre.
+
+**Étape 3 : Exfiltration.** Les données chiffrées sont envoyées par POST vers le serveur C2, avec fallback sur les tokens GitHub volés comme canal de sortie alternatif.
+
+Si l'environnement d'exécution n'est pas GitHub Actions, le payload installe une persistence : un dropper Python dans `~/.config/systemd/user/sysmon.py` qui interroge un canister ICP toutes les cinq minutes, en attente de nouvelles instructions.
+
+### L'infrastructure C2 à quatre couches
+
+C'est ici que l'attaque passe de "sophistiquée" à "structurellement révélatrice."
+
+Le serveur de commande et contrôle de TeamPCP n'est pas un serveur unique. C'est une architecture à quatre couches de résilience :
+
+1. **Domaine typosquatté** : `scan.aquasecurtiy.org` — une faute d'orthographe dans "security" que le cerveau corrige automatiquement.
+2. **Canister ICP** : un smart contract décentralisé sur Internet Computer Protocol (identifiant `tdtqy-oyaaa-aaaae-af2dq-cai`). C'est le **premier abus documenté** de canisters ICP comme dead drop C2. Le canister servait initialement un RickRoll — probablement un test de déploiement — avant d'être basculé vers le payload réel.
+3. **Cloudflare Tunnel** : un tunnel chiffré comme canal de fallback.
+4. **Repository GitHub** : les tokens volés servent eux-mêmes de canal d'exfiltration.
+
+L'asymétrie est structurelle. L'infrastructure de défense — DNS, CDN, CI/CD — est centralisée. Une seule classification Cloudflare peut rendre un service invisible. L'infrastructure d'attaque est décentralisée — un canister ICP ne peut pas être "saisi" par un tribunal parce qu'il n'existe sur aucun serveur identifiable. Le smart contract tourne sur un réseau distribué conçu pour résister aux pressions centralisées.
+
+L'ironie complète le tableau : la technologie de décentralisation, construite au nom de la souveraineté numérique, est adoptée en premier par les attaquants.
+
+### Le CanisterWorm
+
+Le composant le plus alarmant est le CanisterWorm : un module de propagation autonome qui utilise les tokens npm volés pour publier des versions compromises de 47 packages npm. Chaque package compromis devient un nouveau vecteur d'infection. L'attaque ne reste pas confinée à Trivy — elle se propage via la chaîne d'approvisionnement logicielle comme un virus biologique, de dépendance en dépendance.
+
+### *Quis custodiet ipsos custodes*
+
+La question de Juvénal — "qui surveille les surveillants ?" — trouve ici son instantiation littérale. Trivy est l'outil qui vérifie que votre code est sûr. Quand Trivy est compromis, vous ne pouvez pas utiliser Trivy pour détecter que Trivy est compromis. L'outil de vérification est le point aveugle de sa propre vérification.
+
+Le parallèle avec Delve — les 494 rapports SOC 2 identiques produits par une startup YC qui avait levé 32 millions de dollars pour "automatiser la compliance" — est direct. Dans les deux cas, l'outil censé garantir la sécurité est le vecteur de la défaillance. La différence : Delve a produit de la fausse compliance par fraude. Trivy a été retourné par une attaque externe. Le résultat pour l'utilisateur final est le même : la confiance dans l'outil est le mécanisme de la vulnérabilité.
+
+Une seconde compromission a été signalée (version v0.69.4 malicieuse), et 82 hashes malicieux ont été documentés pour les workflows GitHub Actions. L'incident reste en cours au moment de la publication.
+
+---
+
+## Acte IV — L'infrastructure se délocalise
+
+Face à une infrastructure qui classifie, monétise et peut être retournée, une réponse émerge. Pas politique. Architecturale.
+
+### Project Nomad : la souveraineté en deux commandes
+
+Project Nomad — Node for Offline Media, Archives, and Data — est un projet open source (Apache 2.0) qui installe en deux commandes sur Ubuntu/Debian un ensemble de services autonomes :
+
+- **Kiwix** : Wikipedia offline — l'intégralité de l'encyclopédie, consultable sans connexion
+- **Ollama** : un LLM local — un modèle de langage fonctionnant entièrement sur votre machine
+- **OpenStreetMap** : des cartes offline — navigation sans dépendance à Google Maps
+- **Kolibri** : un système éducatif offline — des cours accessibles sans internet
+
+Les specs recommandées — Ryzen 7, 32GB RAM, 1TB SSD — sont celles d'un PC de bureau standard de 2026, pas d'un serveur spécialisé.
+
+Le détail le plus significatif est le placement d'Ollama dans le bundle. Un LLM local n'est pas présenté comme un outil pour développeurs ou un hobby pour technophiles. Il est placé au même niveau que Wikipedia et les cartes — un **service de base**. Le message architectural est limpide : votre IA, sur votre machine, sous votre contrôle. Le même outil que ChatGPT, sans le ciblage conversationnel.
+
+### GrapheneOS : le refus comme architecture
+
+GrapheneOS, le fork Android axé sur la vie privée, poursuit la même logique sur mobile. Son refus d'implémenter la vérification d'âge imposée par plusieurs législations européennes et américaines n'est pas un acte de désobéissance civile — c'est une décision architecturale. Le système d'exploitation ne *peut* pas vérifier l'âge de l'utilisateur parce qu'il est conçu pour ne pas *savoir* qui est l'utilisateur.
+
+Le partenariat annoncé le 2 mars avec Motorola pour la distribution OEM crée une tension productive. Un OS qui refuse de collecter les données d'identité est désormais distribué par un fabricant soumis aux régulations sur la vérification d'âge. La question juridique est ouverte. La question technique est résolue : l'architecture rend la conformité impossible par design.
+
+Ce n'est ni du survivalisme numérique ni de l'idéologie libertarienne. C'est de l'hygiène informationnelle. Quand un fournisseur DNS peut reclassifier un service d'archivage en botnet, quand un assistant de pensée insère des publicités ciblées sur votre raisonnement, quand un scanner de sécurité peut être retourné en arme — la réponse architecturale est de minimiser sa dépendance à l'infrastructure centralisée. Pas par paranoïa. Par ingénierie.
+
+---
+
+## La couche invisible est devenue le terrain de bataille
+
+Pendant deux décennies, l'infrastructure numérique a fonctionné comme l'eau courante : on ouvrait le robinet, l'eau coulait, on ne pensait pas aux tuyaux. Le DNS résolvait. Le CDN distribuait. Le CI/CD compilait. L'IA répondait. Ces services étaient si fiables qu'ils étaient devenus invisibles.
+
+Ce qui s'est passé en six semaines, ce n'est pas que l'infrastructure est devenue "moins fiable." C'est qu'elle est devenue **active**. Elle ne transporte plus l'information — elle la juge (Cloudflare), la monétise (OpenAI), et peut être retournée contre ses utilisateurs (Trivy). Les quatre modes — classification, monétisation, armement, localisation — sont indépendants. Ils émergent de causes différentes : contrôle éditorial, modèle business, exploitation technique, réponse communautaire. Mais ils pointent vers le même changement d'état.
+
+La question n'est plus "est-ce que l'infrastructure est neutre ?" — cette question est résolue, la réponse est non.
+
+La question est désormais : qui contrôle l'infrastructure que **vous** utilisez ? Et si vous ne connaissez pas la réponse — elle n'est probablement pas "vous."
+
+---
+
+*Sources : Wiz Research, "Supply Chain Attack on Trivy" (mars 2026). OpenAI Blog, "Ads in ChatGPT" (février 2026). CrowdStrike Intelligence, analyse technique TeamPCP. Cloudflare Radar. Project Nomad (projectnomad.us). Discussions Hacker News et Reddit r/technology (février-mars 2026).*

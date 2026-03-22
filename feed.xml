@@ -5,8 +5,15 @@
     <link>https://yywar.github.io/strate-weekly</link>
     <description>Analyse tech hebdomadaire. Ce que les tendances révèlent, pas ce qu'elles annoncent.</description>
     <language>fr</language>
-    <lastBuildDate>Sun, 22 Mar 2026 22:54:23 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Mar 2026 23:55:39 +0000</lastBuildDate>
     <atom:link href="https://yywar.github.io/strate-weekly/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Quand l'infrastructure prend parti</title>
+      <link>https://yywar.github.io/strate-weekly/articles/infrastructure-prend-parti.html</link>
+      <guid>https://yywar.github.io/strate-weekly/articles/infrastructure-prend-parti.html</guid>
+      <pubDate>2026-03-23T00:00:00+00:00</pubDate>
+      <description>Cloudflare reclassifie archive.today en botnet. OpenAI cible les pubs sur votre raisonnement. Trivy est retourné contre ses utilisateurs. Project Nomad installe une infrastructure locale en deux commandes. En six semaines, la couche invisible a cessé d'être neutre.</description>
+    </item>
     <item>
       <title>GrapheneOS dit non : quand un OS refuse de vérifier votre âge</title>
       <link>https://yywar.github.io/strate-weekly/articles/grapheneos-age-verification.html</link>
