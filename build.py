@@ -60,14 +60,24 @@ def md_to_html(md_path: Path) -> str:
     return result.stdout
 
 
-def article_template(title: str, date: str, body_html: str) -> str:
+def article_template(title: str, date: str, body_html: str, slug: str = "", summary: str = "") -> str:
+    desc = escape(summary) if summary else escape(title)
+    article_url = f"{SITE_URL}/articles/{slug}.html" if slug else SITE_URL
     return f"""<!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{escape(title)} — {SITE_TITLE}</title>
-<meta name="description" content="{escape(title)}">
+<meta name="description" content="{desc}">
+<meta property="og:title" content="{escape(title)}">
+<meta property="og:description" content="{desc}">
+<meta property="og:url" content="{article_url}">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="{SITE_TITLE}">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{escape(title)}">
+<meta name="twitter:description" content="{desc}">
 <link rel="stylesheet" href="../style.css">
 <link rel="alternate" type="application/rss+xml" title="{SITE_TITLE}" href="{SITE_URL}/feed.xml">
 </head>
@@ -102,6 +112,14 @@ def index_template(articles_html: str) -> str:
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{SITE_TITLE}</title>
 <meta name="description" content="{SITE_DESC}">
+<meta property="og:title" content="{SITE_TITLE}">
+<meta property="og:description" content="{SITE_DESC}">
+<meta property="og:url" content="{SITE_URL}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{SITE_TITLE}">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{SITE_TITLE}">
+<meta name="twitter:description" content="{SITE_DESC}">
 <link rel="stylesheet" href="style.css">
 <link rel="alternate" type="application/rss+xml" title="{SITE_TITLE}" href="{SITE_URL}/feed.xml">
 </head>
@@ -176,7 +194,7 @@ def build():
             continue
 
         body = md_to_html(src_file)
-        html = article_template(a["title"], a["date"], body)
+        html = article_template(a["title"], a["date"], body, a["slug"], a.get("summary", ""))
         out_file = OUT_ARTICLES / f"{a['slug']}.html"
         out_file.write_text(html)
         print(f"  Built {out_file.name}")
