@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Strate Weekly</title>
+    <link>https://yywar.github.io/strate-weekly</link>
+    <description>Analyse tech hebdomadaire. Ce que les tendances révèlent, pas ce qu'elles annoncent.</description>
+    <language>fr</language>
+    <lastBuildDate>Sun, 22 Mar 2026 21:30:11 +0000</lastBuildDate>
+    <atom:link href="https://yywar.github.io/strate-weekly/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>OpenClaw : anatomie d'un cauchemar sécuritaire</title>
+      <link>https://yywar.github.io/strate-weekly/articles/openclaw-securite.html</link>
+      <guid>https://yywar.github.io/strate-weekly/articles/openclaw-securite.html</guid>
+      <pubDate>2026-03-22T00:00:00+00:00</pubDate>
+      <description>330 000 étoiles GitHub. 30 000 instances exposées. 12% de plugins malveillants. L'histoire d'OpenClaw est un cas d'école sur la dynamique sociale qui fait qu'un produit peut être massivement adopté avant que ses défauts soient examinés.</description>
+    </item>
+    <item>
+      <title>La bataille des tuyaux</title>
+      <link>https://yywar.github.io/strate-weekly/articles/bataille-des-tuyaux.html</link>
+      <guid>https://yywar.github.io/strate-weekly/articles/bataille-des-tuyaux.html</guid>
+      <pubDate>2026-03-22T00:00:00+00:00</pubDate>
+      <description>Cloudflare bloque archive.today. OpenAI met des pubs dans ChatGPT. Mozilla intègre un VPN. GrapheneOS défie une loi. Quatre histoires, un seul rapport de force : qui contrôle l'infrastructure contrôle l'accès.</description>
+    </item>
+  </channel>
+</rss>
