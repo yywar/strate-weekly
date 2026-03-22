@@ -19,6 +19,14 @@ OUT_ARTICLES = ROOT / "articles"
 # Article metadata — add new articles here
 ARTICLES = [
     {
+        "slug": "delve-soc2-fraude",
+        "title": "Delve : 494 rapports SOC 2 identiques — anatomie d'une fraude à la compliance industrielle",
+        "subtitle": "Quand l'IA réduit à zéro le coût de production d'un signal de confiance",
+        "date": "2026-03-22",
+        "summary": "494 rapports d'audit SOC 2. 455 entreprises clientes. 99,8% de texte identique. Delve, startup YC à $32M, n'a pas automatisé la compliance — elle a automatisé l'apparence de la compliance. Une histoire sur ce qui arrive quand le coût de production d'un signal de confiance tombe à zéro.",
+        "src": "article_003_delve.md",
+    },
+    {
         "slug": "openclaw-securite",
         "title": "OpenClaw : anatomie d'un cauchemar sécuritaire",
         "subtitle": "Comment la critique rattrape toujours l'enthousiasme",

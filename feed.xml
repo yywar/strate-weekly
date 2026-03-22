@@ -5,8 +5,15 @@
     <link>https://yywar.github.io/strate-weekly</link>
     <description>Analyse tech hebdomadaire. Ce que les tendances révèlent, pas ce qu'elles annoncent.</description>
     <language>fr</language>
-    <lastBuildDate>Sun, 22 Mar 2026 21:30:11 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Mar 2026 21:51:57 +0000</lastBuildDate>
     <atom:link href="https://yywar.github.io/strate-weekly/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Delve : 494 rapports SOC 2 identiques — anatomie d'une fraude à la compliance industrielle</title>
+      <link>https://yywar.github.io/strate-weekly/articles/delve-soc2-fraude.html</link>
+      <guid>https://yywar.github.io/strate-weekly/articles/delve-soc2-fraude.html</guid>
+      <pubDate>2026-03-22T00:00:00+00:00</pubDate>
+      <description>494 rapports d'audit SOC 2. 455 entreprises clientes. 99,8% de texte identique. Delve, startup YC à $32M, n'a pas automatisé la compliance — elle a automatisé l'apparence de la compliance. Une histoire sur ce qui arrive quand le coût de production d'un signal de confiance tombe à zéro.</description>
+    </item>
     <item>
       <title>OpenClaw : anatomie d'un cauchemar sécuritaire</title>
       <link>https://yywar.github.io/strate-weekly/articles/openclaw-securite.html</link>
