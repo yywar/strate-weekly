@@ -20,10 +20,10 @@ OUT_ARTICLES = ROOT / "articles"
 ARTICLES = [
     {
         "slug": "bifurcation-pouvoir-ia",
-        "title": "Le Pentagone et la City ont le meme fournisseur de cerveau",
-        "subtitle": "Palantir centralise l'infrastructure cognitive de deux pays. Flash-MoE la democratise sur un laptop.",
+        "title": "Le Pentagone et la City ont le même fournisseur de cerveau",
+        "subtitle": "Palantir centralise l'infrastructure cognitive de deux pays. Flash-MoE la démocratise sur un laptop.",
         "date": "2026-03-23",
-        "summary": "En une semaine, Palantir est devenu le cerveau du regulateur financier britannique (FCA) et du systeme de ciblage militaire americain (Maven). Un fournisseur unique pour la finance, la sante et la defense de deux pays du G7. Au meme moment, Flash-MoE fait tourner un modele de 397 milliards de parametres sur un MacBook Pro. Meme technologie, trajectoires opposees.",
+        "summary": "En une semaine, Palantir est devenu le cerveau du régulateur financier britannique (FCA) et du système de ciblage militaire américain (Maven). Un fournisseur unique pour la finance, la santé et la défense de deux pays du G7. Au même moment, Flash-MoE fait tourner un modèle de 397 milliards de paramètres sur un MacBook Pro. Même technologie, trajectoires opposées.",
         "src": "article_010_bifurcation.md",
     },
     {
