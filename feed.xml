@@ -5,8 +5,15 @@
     <link>https://yywar.github.io/strate-weekly</link>
     <description>Analyse tech hebdomadaire. Ce que les tendances révèlent, pas ce qu'elles annoncent.</description>
     <language>fr</language>
-    <lastBuildDate>Mon, 23 Mar 2026 01:35:05 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Mar 2026 01:53:35 +0000</lastBuildDate>
     <atom:link href="https://yywar.github.io/strate-weekly/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Quand la publicité entre dans votre raisonnement</title>
+      <link>https://yywar.github.io/strate-weekly/articles/ciblage-cognitif-openai.html</link>
+      <guid>https://yywar.github.io/strate-weekly/articles/ciblage-cognitif-openai.html</guid>
+      <pubDate>2026-03-23T00:00:00+00:00</pubDate>
+      <description>OpenAI active la publicité dans ChatGPT, ciblée sur les sujets de conversation et l'historique de chat. Ce n'est ni du ciblage intentionnel (Google) ni du ciblage comportemental (Facebook) — c'est du ciblage cognitif, sur le processus de raisonnement en cours. Le prix de la pensée non-surveillée : $20 par mois.</description>
+    </item>
     <item>
       <title>Manyana : Bram Cohen veut refaire le contrôle de version — encore</title>
       <link>https://yywar.github.io/strate-weekly/articles/manyana-bram-cohen-version-control.html</link>

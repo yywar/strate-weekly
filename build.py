@@ -19,6 +19,14 @@ OUT_ARTICLES = ROOT / "articles"
 # Article metadata — add new articles here
 ARTICLES = [
     {
+        "slug": "ciblage-cognitif-openai",
+        "title": "Quand la publicité entre dans votre raisonnement",
+        "subtitle": "OpenAI cible les pubs sur votre processus de pensée — une catégorie nouvelle de ciblage qui n'a pas de cadre réglementaire",
+        "date": "2026-03-23",
+        "summary": "OpenAI active la publicité dans ChatGPT, ciblée sur les sujets de conversation et l'historique de chat. Ce n'est ni du ciblage intentionnel (Google) ni du ciblage comportemental (Facebook) — c'est du ciblage cognitif, sur le processus de raisonnement en cours. Le prix de la pensée non-surveillée : $20 par mois.",
+        "src": "article_008_ciblage_cognitif.md",
+    },
+    {
         "slug": "manyana-bram-cohen-version-control",
         "title": "Manyana : Bram Cohen veut refaire le contrôle de version — encore",
         "subtitle": "BitTorrent, Chia, Manyana — le même architecte applique la même idée à trois domaines en 25 ans",
