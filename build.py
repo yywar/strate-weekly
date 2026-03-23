@@ -19,6 +19,14 @@ OUT_ARTICLES = ROOT / "articles"
 # Article metadata - add new articles here
 ARTICLES = [
     {
+        "slug": "bifurcation-pouvoir-ia",
+        "title": "Le Pentagone et la City ont le meme fournisseur de cerveau",
+        "subtitle": "Palantir centralise l'infrastructure cognitive de deux pays. Flash-MoE la democratise sur un laptop.",
+        "date": "2026-03-23",
+        "summary": "En une semaine, Palantir est devenu le cerveau du regulateur financier britannique (FCA) et du systeme de ciblage militaire americain (Maven). Un fournisseur unique pour la finance, la sante et la defense de deux pays du G7. Au meme moment, Flash-MoE fait tourner un modele de 397 milliards de parametres sur un MacBook Pro. Meme technologie, trajectoires opposees.",
+        "src": "article_010_bifurcation.md",
+    },
+    {
         "slug": "goulot-interface",
         "title": "BYD charge une voiture en 5 minutes — et ça révèle le vrai problème de l'IA",
         "subtitle": "BYD, Bram Cohen, Steve Krouse et METR convergent vers le même constat : le throughput n'est jamais le facteur limitant",
