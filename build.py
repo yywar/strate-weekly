@@ -20,7 +20,7 @@ OUT_ARTICLES = ROOT / "articles"
 ARTICLES = [
     {
         "slug": "goulot-interface",
-        "title": "Le goulot est toujours à l'interface",
+        "title": "BYD charge une voiture en 5 minutes — et ça révèle le vrai problème de l'IA",
         "subtitle": "BYD, Bram Cohen, Steve Krouse et METR convergent vers le même constat : le throughput n'est jamais le facteur limitant",
         "date": "2026-03-23",
         "summary": "Un connecteur de charge, un algorithme de merge, un médium de précision, une étude de productivité. Quatre domaines, un seul pattern : le goulot d'étranglement est toujours à l'interface entre les composants, jamais dans le débit. La loi d'Amdahl, appliquée aux interfaces, explique pourquoi.",
@@ -28,7 +28,7 @@ ARTICLES = [
     },
     {
         "slug": "ciblage-cognitif-openai",
-        "title": "Quand la publicité entre dans votre raisonnement",
+        "title": "OpenAI cible ses publicités sur vos conversations — pour 60$ les mille vues",
         "subtitle": "OpenAI cible les pubs sur votre processus de pensée, une catégorie nouvelle de ciblage qui n'a pas de cadre réglementaire",
         "date": "2026-03-23",
         "summary": "OpenAI active la publicité dans ChatGPT, ciblée sur les sujets de conversation et l'historique de chat. Ce n'est ni du ciblage intentionnel (Google) ni du ciblage comportemental (Facebook). C'est du ciblage cognitif, sur le processus de raisonnement en cours. Le prix de la pensée non-surveillée : $20 par mois.",
@@ -52,7 +52,7 @@ ARTICLES = [
     },
     {
         "slug": "infrastructure-prend-parti",
-        "title": "Quand l'infrastructure prend parti",
+        "title": "75 des 76 tags Trivy sur GitHub étaient compromis — et personne n'a rien vu",
         "subtitle": "DNS, publicité cognitive, supply chain compromise, souveraineté locale : quatre actes d'une transition de phase",
         "date": "2026-03-23",
         "summary": "Cloudflare reclassifie archive.today en botnet. OpenAI cible les pubs sur votre raisonnement. Trivy est retourné contre ses utilisateurs. Project Nomad installe une infrastructure locale en deux commandes. En six semaines, la couche invisible a cessé d'être neutre.",
@@ -60,7 +60,7 @@ ARTICLES = [
     },
     {
         "slug": "grapheneos-age-verification",
-        "title": "GrapheneOS dit non : quand un OS refuse de vérifier votre âge",
+        "title": "Un OS mobile refuse de vérifier votre âge — à trois semaines d'un deal Motorola",
         "subtitle": "Brésil, Californie, Motorola : la vérification d'âge au niveau OS est la prochaine Crypto War",
         "date": "2026-03-22",
         "summary": "GrapheneOS refuse de se conformer aux lois de vérification d'âge brésiliennes et californiennes. À trois semaines d'un partenariat Motorola, le projet open-source pose un choix qui concerne tout le monde : un OS doit-il savoir quel âge vous avez ?",
@@ -84,7 +84,7 @@ ARTICLES = [
     },
     {
         "slug": "bataille-des-tuyaux",
-        "title": "La bataille des tuyaux",
+        "title": "Cloudflare classe archive.today en botnet — et coupe l'accès",
         "subtitle": "Comment quatre événements d'une seule journée révèlent qui contrôle vraiment Internet",
         "date": "2026-03-22",
         "summary": "Cloudflare bloque archive.today. OpenAI met des pubs dans ChatGPT. Mozilla intègre un VPN. GrapheneOS défie une loi. Quatre histoires, un seul rapport de force : qui contrôle l'infrastructure contrôle l'accès.",

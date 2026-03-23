@@ -5,17 +5,17 @@
     <link>https://yywar.github.io/strate-weekly</link>
     <description>Analyse tech hebdomadaire. Ce que les tendances révèlent, pas ce qu'elles annoncent.</description>
     <language>fr</language>
-    <lastBuildDate>Mon, 23 Mar 2026 08:01:55 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Mar 2026 09:29:25 +0000</lastBuildDate>
     <atom:link href="https://yywar.github.io/strate-weekly/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>Le goulot est toujours à l'interface</title>
+      <title>BYD charge une voiture en 5 minutes — et ça révèle le vrai problème de l'IA</title>
       <link>https://yywar.github.io/strate-weekly/articles/goulot-interface.html</link>
       <guid>https://yywar.github.io/strate-weekly/articles/goulot-interface.html</guid>
       <pubDate>2026-03-23T00:00:00+00:00</pubDate>
       <description>Un connecteur de charge, un algorithme de merge, un médium de précision, une étude de productivité. Quatre domaines, un seul pattern : le goulot d'étranglement est toujours à l'interface entre les composants, jamais dans le débit. La loi d'Amdahl, appliquée aux interfaces, explique pourquoi.</description>
     </item>
     <item>
-      <title>Quand la publicité entre dans votre raisonnement</title>
+      <title>OpenAI cible ses publicités sur vos conversations — pour 60$ les mille vues</title>
       <link>https://yywar.github.io/strate-weekly/articles/ciblage-cognitif-openai.html</link>
       <guid>https://yywar.github.io/strate-weekly/articles/ciblage-cognitif-openai.html</guid>
       <pubDate>2026-03-23T00:00:00+00:00</pubDate>
@@ -36,14 +36,14 @@
       <description>Une étude contrôlée montre que les développeurs assistés par IA sont 19% plus lents, mais croient être 20% plus rapides. Ce fossé de 40 points produit du code dangereux, submerge l'open source, et coûte 40 milliards de dollars d'investissements sans retour. Ni remplacement ni inutilité : le vrai danger est l'illusion de productivité.</description>
     </item>
     <item>
-      <title>Quand l'infrastructure prend parti</title>
+      <title>75 des 76 tags Trivy sur GitHub étaient compromis — et personne n'a rien vu</title>
       <link>https://yywar.github.io/strate-weekly/articles/infrastructure-prend-parti.html</link>
       <guid>https://yywar.github.io/strate-weekly/articles/infrastructure-prend-parti.html</guid>
       <pubDate>2026-03-23T00:00:00+00:00</pubDate>
       <description>Cloudflare reclassifie archive.today en botnet. OpenAI cible les pubs sur votre raisonnement. Trivy est retourné contre ses utilisateurs. Project Nomad installe une infrastructure locale en deux commandes. En six semaines, la couche invisible a cessé d'être neutre.</description>
     </item>
     <item>
-      <title>GrapheneOS dit non : quand un OS refuse de vérifier votre âge</title>
+      <title>Un OS mobile refuse de vérifier votre âge — à trois semaines d'un deal Motorola</title>
       <link>https://yywar.github.io/strate-weekly/articles/grapheneos-age-verification.html</link>
       <guid>https://yywar.github.io/strate-weekly/articles/grapheneos-age-verification.html</guid>
       <pubDate>2026-03-22T00:00:00+00:00</pubDate>
@@ -64,7 +64,7 @@
       <description>330 000 étoiles GitHub. 30 000 instances exposées. 12% de plugins malveillants. L'histoire d'OpenClaw est un cas d'école sur la dynamique sociale qui fait qu'un produit peut être massivement adopté avant que ses défauts soient examinés.</description>
     </item>
     <item>
-      <title>La bataille des tuyaux</title>
+      <title>Cloudflare classe archive.today en botnet — et coupe l'accès</title>
       <link>https://yywar.github.io/strate-weekly/articles/bataille-des-tuyaux.html</link>
       <guid>https://yywar.github.io/strate-weekly/articles/bataille-des-tuyaux.html</guid>
       <pubDate>2026-03-22T00:00:00+00:00</pubDate>
