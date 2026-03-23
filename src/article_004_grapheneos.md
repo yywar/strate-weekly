@@ -1,12 +1,12 @@
 # GrapheneOS dit non : quand un OS refuse de vérifier votre âge
 
-*Article #4 — Strate, 22 mars 2026*
+*Article #4 | Strate, 22 mars 2026*
 
 ---
 
 ## "If GrapheneOS devices can't be sold in a region, so be it"
 
-Le 20 mars 2026, GrapheneOS a publié un statement sur Mastodon : "GrapheneOS will remain usable by anyone around the world without requiring personal information, identification or an account." Si les lois de vérification d'âge rendent ses appareils invendables dans certaines régions — tant pis.
+Le 20 mars 2026, GrapheneOS a publié un statement sur Mastodon : "GrapheneOS will remain usable by anyone around the world without requiring personal information, identification or an account." Si les lois de vérification d'âge rendent ses appareils invendables dans certaines régions, tant pis.
 
 En temps normal, un OS mobile qui refuse de se conformer à une loi, c'est un suicide commercial. Sauf que GrapheneOS n'est pas un OS normal. Et les lois en question ne sont pas normales non plus.
 
@@ -20,9 +20,9 @@ Les deux ont raison. Et les deux passent à côté de l'essentiel.
 
 ### Le Brésil : depuis cinq jours
 
-La Lei 15.211 — le "Digital ECA" brésilien — est entrée en application le 17 mars 2026. Cinq jours avant le statement de GrapheneOS. Ce n'est pas une coïncidence.
+La Lei 15.211, le "Digital ECA" brésilien, est entrée en application le 17 mars 2026. Cinq jours avant le statement de GrapheneOS. Ce n'est pas une coïncidence.
 
-La loi s'applique à tout service numérique "susceptible d'être accédé" par des mineurs au Brésil. En pratique : tout. Les méthodes de vérification acceptées incluent le CPF (identifiant fiscal brésilien, qui retourne la date de naissance), la biométrie faciale avec détection de vivacité, et le téléchargement de documents d'identité. L'auto-déclaration — cocher "j'ai plus de 18 ans" — est explicitement interdite.
+La loi s'applique à tout service numérique "susceptible d'être accédé" par des mineurs au Brésil. En pratique : tout. Les méthodes de vérification acceptées incluent le CPF (identifiant fiscal brésilien, qui retourne la date de naissance), la biométrie faciale avec détection de vivacité, et le téléchargement de documents d'identité. L'auto-déclaration, cocher "j'ai plus de 18 ans", est explicitement interdite.
 
 Les amendes : jusqu'à 50 millions de reais (~9,5 millions de dollars) ou 10% du chiffre d'affaires brésilien. Par infraction.
 
@@ -30,15 +30,15 @@ Le détail qui a fait réagir la communauté open-source : l'ANPD (l'autorité b
 
 ### La Californie : dans neuf mois
 
-L'AB-1043 — le "Digital Age Assurance Act" californien — a été signé par le gouverneur Newsom le 13 octobre 2025. Il entre en vigueur le 1er janvier 2027.
+L'AB-1043, le "Digital Age Assurance Act" californien, a été signé par le gouverneur Newsom le 13 octobre 2025. Il entre en vigueur le 1er janvier 2027.
 
-Le mécanisme est plus subtil que le brésilien. Pas de biométrie, pas de documents d'identité. À la place : un **signal d'âge chiffré intégré au niveau de l'OS**. Lors de la configuration d'un appareil, l'utilisateur déclare sa date de naissance. Le système encode un bracket d'âge — "moins de 13 ans", "13-15", "16-17", "18+" — dans un signal cryptographique exposé aux applications via une API. La date de naissance elle-même ne quitte jamais l'appareil.
+Le mécanisme est plus subtil que le brésilien. Pas de biométrie, pas de documents d'identité. À la place : un **signal d'âge chiffré intégré au niveau de l'OS**. Lors de la configuration d'un appareil, l'utilisateur déclare sa date de naissance. Le système encode un bracket d'âge : "moins de 13 ans", "13-15", "16-17", "18+" : dans un signal cryptographique exposé aux applications via une API. La date de naissance elle-même ne quitte jamais l'appareil.
 
-C'est de la vérification d'âge "privacy-preserving" — un terme que le texte de loi utilise explicitement. La donnée sensible (la date de naissance) reste locale. Seul le bracket est transmis. Aucun document, aucune biométrie, aucun tiers de confiance.
+C'est de la vérification d'âge "privacy-preserving", un terme que le texte de loi utilise explicitement. La donnée sensible (la date de naissance) reste locale. Seul le bracket est transmis. Aucun document, aucune biométrie, aucun tiers de confiance.
 
 Le problème : recevoir ce signal établit ce que la loi appelle "actual knowledge" de l'âge de l'utilisateur. Pour une application, cela déclenche automatiquement les obligations de conformité COPPA et CCPA. Sanctions : jusqu'à 7 500 dollars par enfant affecté en cas de violation intentionnelle.
 
-L'obligation est imposée aux **fournisseurs d'OS**. Apple, Google, Microsoft, Samsung — et tout projet qui distribue un système d'exploitation mobile.
+L'obligation est imposée aux **fournisseurs d'OS**. Apple, Google, Microsoft, Samsung : et tout projet qui distribue un système d'exploitation mobile.
 
 Y compris GrapheneOS.
 
@@ -50,9 +50,9 @@ Le 2 mars 2026, au Mobile World Congress de Barcelone, Motorola et GrapheneOS on
 
 C'était il y a trois semaines.
 
-La contradiction est structurelle. Motorola est un fabricant commercial qui vend des appareils dans des juridictions qui exigent la vérification d'âge — le Brésil et la Californie sont deux de ses marchés majeurs. GrapheneOS refuse catégoriquement d'implémenter une quelconque collecte de données personnelles au niveau de l'OS.
+La contradiction est structurelle. Motorola est un fabricant commercial qui vend des appareils dans des juridictions qui exigent la vérification d'âge, le Brésil et la Californie sont deux de ses marchés majeurs. GrapheneOS refuse catégoriquement d'implémenter une quelconque collecte de données personnelles au niveau de l'OS.
 
-Si l'AB-1043 entre en vigueur en janvier 2027 — la même année que le premier téléphone Motorola/GrapheneOS — le partenariat contient une contradiction irrésolue dès le jour du lancement. Motorola ne peut pas vendre un appareil non conforme en Californie. GrapheneOS ne mettra pas de signal d'âge dans son OS.
+Si l'AB-1043 entre en vigueur en janvier 2027, la même année que le premier téléphone Motorola/GrapheneOS, le partenariat contient une contradiction irrésolue dès le jour du lancement. Motorola ne peut pas vendre un appareil non conforme en Californie. GrapheneOS ne mettra pas de signal d'âge dans son OS.
 
 Deux scénarios plausibles : un fork régional (Android standard pour les marchés réglementés, GrapheneOS pour le reste), ou une restriction géographique pure. Dans les deux cas, le partenariat est plus fragile qu'il n'en a l'air.
 
@@ -62,7 +62,7 @@ Le projet GrapheneOS, sur son forum, est explicite : "We have no more obligation
 
 ## Les Crypto Wars, version 2026
 
-En 1991, Phil Zimmermann a publié PGP — Pretty Good Privacy — un logiciel de chiffrement assez puissant pour résister aux gouvernements. Le Department of Justice a ouvert une enquête criminelle qui a duré trois ans, pour "exportation d'armes" : à l'époque, la cryptographie forte était classée comme munition au titre de l'ITAR.
+En 1991, Phil Zimmermann a publié PGP. Pretty Good Privacy, un logiciel de chiffrement assez puissant pour résister aux gouvernements. Le Department of Justice a ouvert une enquête criminelle qui a duré trois ans, pour "exportation d'armes" : à l'époque, la cryptographie forte était classée comme munition au titre de l'ITAR.
 
 Le parallèle avec 2026 n'est pas métaphorique. C'est structurel.
 
@@ -70,7 +70,7 @@ Dans les deux cas, un gouvernement exige qu'une technologie de protection de la 
 
 La résolution des Crypto Wars a pris une décennie. L'arrêt Bernstein v. US (1999) a établi que le code source est un discours protégé par le Premier Amendement. Les contrôles à l'export ont été assouplis. Le chiffrement fort est devenu la norme.
 
-Mais les Crypto Wars avaient un avantage structurel que la bataille actuelle n'a pas. Le chiffrement était binaire — soit il est fort, soit il ne l'est pas. Le signal d'âge californien est **gradué**. Il ne casse rien. Il ajoute une couche. Il est opt-in pour l'utilisateur (en théorie — la loi l'impose, mais la donnée reste locale). C'est précisément ce qui le rend plus difficile à combattre que le Clipper Chip.
+Mais les Crypto Wars avaient un avantage structurel que la bataille actuelle n'a pas. Le chiffrement était binaire : soit il est fort, soit il ne l'est pas. Le signal d'âge californien est **gradué**. Il ne casse rien. Il ajoute une couche. Il est opt-in pour l'utilisateur (en théorie : la loi l'impose, mais la donnée reste locale). C'est précisément ce qui le rend plus difficile à combattre que le Clipper Chip.
 
 L'argument de Zimmermann était simple : "Si la privacy est criminalisée, seuls les criminels auront de la privacy." L'argument contre l'AB-1043 est plus nuancé : "Ce n'est pas de la surveillance, mais ça crée l'infrastructure de la surveillance." Les projets comme DB48X et MidnightBSD, qui refusent déjà la conformité brésilienne, font le même pari que Zimmermann : le refus total, quelles que soient les conséquences commerciales.
 
@@ -92,11 +92,11 @@ C'est le paradoxe de la vérification d'âge : pour savoir qui a besoin de prote
 
 ## Ce que ça change pour vous
 
-**Si vous utilisez Android :** Votre prochain téléphone, configuré en Californie après janvier 2027, vous demandera votre date de naissance. Si vous refusez, les applications pourront vous traiter comme un mineur par défaut — c'est l'interprétation la plus restrictive de la loi.
+**Si vous utilisez Android :** Votre prochain téléphone, configuré en Californie après janvier 2027, vous demandera votre date de naissance. Si vous refusez, les applications pourront vous traiter comme un mineur par défaut : c'est l'interprétation la plus restrictive de la loi.
 
 **Si vous développez une application :** L'API d'âge californienne sera un signal qu'il faudra intégrer. Recevoir le bracket d'âge d'un utilisateur vous impose des obligations légales que vous n'aviez pas avant. L'ignorance n'est plus une défense : le signal existe, ne pas le lire est un choix documentable.
 
-**Si vous maintenez un projet open-source :** Le Brésil vous surveille peut-être. La loi s'applique à tout service "susceptible d'être accédé" par des mineurs brésiliens, sans distinction entre entreprise commerciale et projet bénévole. L'ANPD a déjà des distributions Linux dans son viseur. Le précédent juridique n'existe pas encore — mais le risque réglementaire, lui, est immédiat.
+**Si vous maintenez un projet open-source :** Le Brésil vous surveille peut-être. La loi s'applique à tout service "susceptible d'être accédé" par des mineurs brésiliens, sans distinction entre entreprise commerciale et projet bénévole. L'ANPD a déjà des distributions Linux dans son viseur. Le précédent juridique n'existe pas encore : mais le risque réglementaire, lui, est immédiat.
 
 **Si vous dirigez une entreprise :** Les deux lois créent une pression convergente vers l'intégration de vérification d'âge au niveau OS. Le calendrier est serré : le Brésil est déjà en vigueur, la Californie dans neuf mois. Les entreprises qui vendent des appareils ou des applications dans ces marchés doivent commencer à planifier maintenant, pas en décembre.
 
@@ -104,4 +104,4 @@ GrapheneOS a choisi de refuser. C'est un luxe que seul un projet sans actionnair
 
 ---
 
-*Sources : [Tom's Hardware](https://www.tomshardware.com/software/operating-systems/grapheneos-refuses-to-comply-with-age-verification-laws), [GrapheneOS/Mastodon](https://grapheneos.social/@GrapheneOS/116261301913660830), [California Legislature AB-1043](https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB1043), [Troutman Privacy](https://www.troutmanprivacy.com/2025/10/analyzing-californias-digital-age-assurance-act/), [Reason.org](https://reason.org/commentary/examining-californias-digital-age-assurance-act/), [Didit — Brazil Digital ECA](https://didit.me/blog/brazil-digital-eca-age-verification/), [VerifyMy](https://verifymy.io/blog/brazil-digital-dca-age-verification-rules/), [Reclaim The Net](https://reclaimthenet.org/brazil-digital-eca-age-verification-law), [Android Authority — Motorola/GrapheneOS](https://www.androidauthority.com/grapheneos-motorola-partnership-announced-3645710/)*
+*Sources : [Tom's Hardware](https://www.tomshardware.com/software/operating-systems/grapheneos-refuses-to-comply-with-age-verification-laws), [GrapheneOS/Mastodon](https://grapheneos.social/@GrapheneOS/116261301913660830), [California Legislature AB-1043](https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB1043), [Troutman Privacy](https://www.troutmanprivacy.com/2025/10/analyzing-californias-digital-age-assurance-act/), [Reason.org](https://reason.org/commentary/examining-californias-digital-age-assurance-act/), [Didit. Brazil Digital ECA](https://didit.me/blog/brazil-digital-eca-age-verification/), [VerifyMy](https://verifymy.io/blog/brazil-digital-dca-age-verification-rules/), [Reclaim The Net](https://reclaimthenet.org/brazil-digital-eca-age-verification-law), [Android Authority. Motorola/GrapheneOS](https://www.androidauthority.com/grapheneos-motorola-partnership-announced-3645710/)*

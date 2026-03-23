@@ -5,28 +5,28 @@
     <link>https://yywar.github.io/strate-weekly</link>
     <description>Analyse tech hebdomadaire. Ce que les tendances révèlent, pas ce qu'elles annoncent.</description>
     <language>fr</language>
-    <lastBuildDate>Mon, 23 Mar 2026 01:53:35 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Mar 2026 07:43:55 +0000</lastBuildDate>
     <atom:link href="https://yywar.github.io/strate-weekly/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Quand la publicité entre dans votre raisonnement</title>
       <link>https://yywar.github.io/strate-weekly/articles/ciblage-cognitif-openai.html</link>
       <guid>https://yywar.github.io/strate-weekly/articles/ciblage-cognitif-openai.html</guid>
       <pubDate>2026-03-23T00:00:00+00:00</pubDate>
-      <description>OpenAI active la publicité dans ChatGPT, ciblée sur les sujets de conversation et l'historique de chat. Ce n'est ni du ciblage intentionnel (Google) ni du ciblage comportemental (Facebook) — c'est du ciblage cognitif, sur le processus de raisonnement en cours. Le prix de la pensée non-surveillée : $20 par mois.</description>
+      <description>OpenAI active la publicité dans ChatGPT, ciblée sur les sujets de conversation et l'historique de chat. Ce n'est ni du ciblage intentionnel (Google) ni du ciblage comportemental (Facebook). C'est du ciblage cognitif, sur le processus de raisonnement en cours. Le prix de la pensée non-surveillée : $20 par mois.</description>
     </item>
     <item>
-      <title>Manyana : Bram Cohen veut refaire le contrôle de version — encore</title>
+      <title>Manyana : quand Bram Cohen veut refaire le contrôle de version</title>
       <link>https://yywar.github.io/strate-weekly/articles/manyana-bram-cohen-version-control.html</link>
       <guid>https://yywar.github.io/strate-weekly/articles/manyana-bram-cohen-version-control.html</guid>
       <pubDate>2026-03-23T00:00:00+00:00</pubDate>
-      <description>Bram Cohen, inventeur de BitTorrent, publie Manyana : 470 lignes de Python qui proposent un contrôle de version où les merges ne failent jamais. Derrière le prototype, une thèse sur la commutativité — et la convergence de Google, Meta et un architecte légendaire vers le même diagnostic : Git est trop cassé pour rester tel quel.</description>
+      <description>Bram Cohen, inventeur de BitTorrent, publie Manyana : 470 lignes de Python qui proposent un contrôle de version où les merges ne failent jamais. Derrière le prototype, une thèse sur la commutativité, et la convergence de Google, Meta et un architecte légendaire vers le même diagnostic : Git est trop cassé pour rester tel quel.</description>
     </item>
     <item>
       <title>Vous pensez être 20% plus rapide. Vous êtes 19% plus lent.</title>
       <link>https://yywar.github.io/strate-weekly/articles/perception-gap-ia-code.html</link>
       <guid>https://yywar.github.io/strate-weekly/articles/perception-gap-ia-code.html</guid>
       <pubDate>2026-03-23T00:00:00+00:00</pubDate>
-      <description>Une étude contrôlée montre que les développeurs assistés par IA sont 19% plus lents — mais croient être 20% plus rapides. Ce fossé de 40 points produit du code dangereux, submerge l'open source, et coûte 40 milliards de dollars d'investissements sans retour. Ni remplacement ni inutilité : le vrai danger est l'illusion de productivité.</description>
+      <description>Une étude contrôlée montre que les développeurs assistés par IA sont 19% plus lents, mais croient être 20% plus rapides. Ce fossé de 40 points produit du code dangereux, submerge l'open source, et coûte 40 milliards de dollars d'investissements sans retour. Ni remplacement ni inutilité : le vrai danger est l'illusion de productivité.</description>
     </item>
     <item>
       <title>Quand l'infrastructure prend parti</title>
@@ -43,11 +43,11 @@
       <description>GrapheneOS refuse de se conformer aux lois de vérification d'âge brésiliennes et californiennes. À trois semaines d'un partenariat Motorola, le projet open-source pose un choix qui concerne tout le monde : un OS doit-il savoir quel âge vous avez ?</description>
     </item>
     <item>
-      <title>Delve : 494 rapports SOC 2 identiques — anatomie d'une fraude à la compliance industrielle</title>
+      <title>Delve : 494 rapports SOC 2 identiques, anatomie d'une fraude à la compliance industrielle</title>
       <link>https://yywar.github.io/strate-weekly/articles/delve-soc2-fraude.html</link>
       <guid>https://yywar.github.io/strate-weekly/articles/delve-soc2-fraude.html</guid>
       <pubDate>2026-03-22T00:00:00+00:00</pubDate>
-      <description>494 rapports d'audit SOC 2. 455 entreprises clientes. 99,8% de texte identique. Delve, startup YC à $32M, n'a pas automatisé la compliance — elle a automatisé l'apparence de la compliance. Une histoire sur ce qui arrive quand le coût de production d'un signal de confiance tombe à zéro.</description>
+      <description>494 rapports d'audit SOC 2. 455 entreprises clientes. 99,8% de texte identique. Delve, startup YC à $32M, n'a pas automatisé la compliance. Elle a automatisé l'apparence de la compliance. Une histoire sur ce qui arrive quand le coût de production d'un signal de confiance tombe à zéro.</description>
     </item>
     <item>
       <title>OpenClaw : anatomie d'un cauchemar sécuritaire</title>

@@ -16,36 +16,36 @@ ROOT = Path(__file__).parent
 SRC = ROOT / "src"
 OUT_ARTICLES = ROOT / "articles"
 
-# Article metadata — add new articles here
+# Article metadata - add new articles here
 ARTICLES = [
     {
         "slug": "ciblage-cognitif-openai",
         "title": "Quand la publicité entre dans votre raisonnement",
-        "subtitle": "OpenAI cible les pubs sur votre processus de pensée — une catégorie nouvelle de ciblage qui n'a pas de cadre réglementaire",
+        "subtitle": "OpenAI cible les pubs sur votre processus de pensée, une catégorie nouvelle de ciblage qui n'a pas de cadre réglementaire",
         "date": "2026-03-23",
-        "summary": "OpenAI active la publicité dans ChatGPT, ciblée sur les sujets de conversation et l'historique de chat. Ce n'est ni du ciblage intentionnel (Google) ni du ciblage comportemental (Facebook) — c'est du ciblage cognitif, sur le processus de raisonnement en cours. Le prix de la pensée non-surveillée : $20 par mois.",
+        "summary": "OpenAI active la publicité dans ChatGPT, ciblée sur les sujets de conversation et l'historique de chat. Ce n'est ni du ciblage intentionnel (Google) ni du ciblage comportemental (Facebook). C'est du ciblage cognitif, sur le processus de raisonnement en cours. Le prix de la pensée non-surveillée : $20 par mois.",
         "src": "article_008_ciblage_cognitif.md",
     },
     {
         "slug": "manyana-bram-cohen-version-control",
-        "title": "Manyana : Bram Cohen veut refaire le contrôle de version — encore",
-        "subtitle": "BitTorrent, Chia, Manyana — le même architecte applique la même idée à trois domaines en 25 ans",
+        "title": "Manyana : quand Bram Cohen veut refaire le contrôle de version",
+        "subtitle": "BitTorrent, Chia, Manyana : le même architecte applique la même idée à trois domaines en 25 ans",
         "date": "2026-03-23",
-        "summary": "Bram Cohen, inventeur de BitTorrent, publie Manyana : 470 lignes de Python qui proposent un contrôle de version où les merges ne failent jamais. Derrière le prototype, une thèse sur la commutativité — et la convergence de Google, Meta et un architecte légendaire vers le même diagnostic : Git est trop cassé pour rester tel quel.",
+        "summary": "Bram Cohen, inventeur de BitTorrent, publie Manyana : 470 lignes de Python qui proposent un contrôle de version où les merges ne failent jamais. Derrière le prototype, une thèse sur la commutativité, et la convergence de Google, Meta et un architecte légendaire vers le même diagnostic : Git est trop cassé pour rester tel quel.",
         "src": "article_007_manyana.md",
     },
     {
         "slug": "perception-gap-ia-code",
         "title": "Vous pensez être 20% plus rapide. Vous êtes 19% plus lent.",
-        "subtitle": "Le fossé perception-réalité de l'IA dans le développement logiciel — données, dégâts, et ce qui reste debout",
+        "subtitle": "Le fossé perception-réalité de l'IA dans le développement logiciel : données, dégâts, et ce qui reste debout",
         "date": "2026-03-23",
-        "summary": "Une étude contrôlée montre que les développeurs assistés par IA sont 19% plus lents — mais croient être 20% plus rapides. Ce fossé de 40 points produit du code dangereux, submerge l'open source, et coûte 40 milliards de dollars d'investissements sans retour. Ni remplacement ni inutilité : le vrai danger est l'illusion de productivité.",
+        "summary": "Une étude contrôlée montre que les développeurs assistés par IA sont 19% plus lents, mais croient être 20% plus rapides. Ce fossé de 40 points produit du code dangereux, submerge l'open source, et coûte 40 milliards de dollars d'investissements sans retour. Ni remplacement ni inutilité : le vrai danger est l'illusion de productivité.",
         "src": "article_006_perception_gap.md",
     },
     {
         "slug": "infrastructure-prend-parti",
         "title": "Quand l'infrastructure prend parti",
-        "subtitle": "DNS, publicité cognitive, supply chain compromise, souveraineté locale — quatre actes d'une transition de phase",
+        "subtitle": "DNS, publicité cognitive, supply chain compromise, souveraineté locale : quatre actes d'une transition de phase",
         "date": "2026-03-23",
         "summary": "Cloudflare reclassifie archive.today en botnet. OpenAI cible les pubs sur votre raisonnement. Trivy est retourné contre ses utilisateurs. Project Nomad installe une infrastructure locale en deux commandes. En six semaines, la couche invisible a cessé d'être neutre.",
         "src": "article_005_infrastructure.md",
@@ -53,17 +53,17 @@ ARTICLES = [
     {
         "slug": "grapheneos-age-verification",
         "title": "GrapheneOS dit non : quand un OS refuse de vérifier votre âge",
-        "subtitle": "Brésil, Californie, Motorola — la vérification d'âge au niveau OS est la prochaine Crypto War",
+        "subtitle": "Brésil, Californie, Motorola : la vérification d'âge au niveau OS est la prochaine Crypto War",
         "date": "2026-03-22",
         "summary": "GrapheneOS refuse de se conformer aux lois de vérification d'âge brésiliennes et californiennes. À trois semaines d'un partenariat Motorola, le projet open-source pose un choix qui concerne tout le monde : un OS doit-il savoir quel âge vous avez ?",
         "src": "article_004_grapheneos.md",
     },
     {
         "slug": "delve-soc2-fraude",
-        "title": "Delve : 494 rapports SOC 2 identiques — anatomie d'une fraude à la compliance industrielle",
+        "title": "Delve : 494 rapports SOC 2 identiques, anatomie d'une fraude à la compliance industrielle",
         "subtitle": "Quand l'IA réduit à zéro le coût de production d'un signal de confiance",
         "date": "2026-03-22",
-        "summary": "494 rapports d'audit SOC 2. 455 entreprises clientes. 99,8% de texte identique. Delve, startup YC à $32M, n'a pas automatisé la compliance — elle a automatisé l'apparence de la compliance. Une histoire sur ce qui arrive quand le coût de production d'un signal de confiance tombe à zéro.",
+        "summary": "494 rapports d'audit SOC 2. 455 entreprises clientes. 99,8% de texte identique. Delve, startup YC à $32M, n'a pas automatisé la compliance. Elle a automatisé l'apparence de la compliance. Une histoire sur ce qui arrive quand le coût de production d'un signal de confiance tombe à zéro.",
         "src": "article_003_delve.md",
     },
     {
@@ -108,7 +108,7 @@ def article_template(title: str, date: str, body_html: str, slug: str = "", summ
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{escape(title)} — {SITE_TITLE}</title>
+<title>{escape(title)},{SITE_TITLE}</title>
 <meta name="description" content="{desc}">
 <meta property="og:title" content="{escape(title)}">
 <meta property="og:description" content="{desc}">
@@ -308,7 +308,7 @@ def about_page() -> str:
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>&Agrave; propos — {SITE_TITLE}</title>
+<title>&Agrave; propos,{SITE_TITLE}</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
