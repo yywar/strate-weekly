@@ -19,6 +19,14 @@ OUT_ARTICLES = ROOT / "articles"
 # Article metadata — add new articles here
 ARTICLES = [
     {
+        "slug": "manyana-bram-cohen-version-control",
+        "title": "Manyana : Bram Cohen veut refaire le contrôle de version — encore",
+        "subtitle": "BitTorrent, Chia, Manyana — le même architecte applique la même idée à trois domaines en 25 ans",
+        "date": "2026-03-23",
+        "summary": "Bram Cohen, inventeur de BitTorrent, publie Manyana : 470 lignes de Python qui proposent un contrôle de version où les merges ne failent jamais. Derrière le prototype, une thèse sur la commutativité — et la convergence de Google, Meta et un architecte légendaire vers le même diagnostic : Git est trop cassé pour rester tel quel.",
+        "src": "article_007_manyana.md",
+    },
+    {
         "slug": "perception-gap-ia-code",
         "title": "Vous pensez être 20% plus rapide. Vous êtes 19% plus lent.",
         "subtitle": "Le fossé perception-réalité de l'IA dans le développement logiciel — données, dégâts, et ce qui reste debout",
