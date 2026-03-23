@@ -19,6 +19,14 @@ OUT_ARTICLES = ROOT / "articles"
 # Article metadata — add new articles here
 ARTICLES = [
     {
+        "slug": "perception-gap-ia-code",
+        "title": "Vous pensez être 20% plus rapide. Vous êtes 19% plus lent.",
+        "subtitle": "Le fossé perception-réalité de l'IA dans le développement logiciel — données, dégâts, et ce qui reste debout",
+        "date": "2026-03-23",
+        "summary": "Une étude contrôlée montre que les développeurs assistés par IA sont 19% plus lents — mais croient être 20% plus rapides. Ce fossé de 40 points produit du code dangereux, submerge l'open source, et coûte 40 milliards de dollars d'investissements sans retour. Ni remplacement ni inutilité : le vrai danger est l'illusion de productivité.",
+        "src": "article_006_perception_gap.md",
+    },
+    {
         "slug": "infrastructure-prend-parti",
         "title": "Quand l'infrastructure prend parti",
         "subtitle": "DNS, publicité cognitive, supply chain compromise, souveraineté locale — quatre actes d'une transition de phase",

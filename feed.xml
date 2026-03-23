@@ -5,8 +5,15 @@
     <link>https://yywar.github.io/strate-weekly</link>
     <description>Analyse tech hebdomadaire. Ce que les tendances révèlent, pas ce qu'elles annoncent.</description>
     <language>fr</language>
-    <lastBuildDate>Mon, 23 Mar 2026 00:26:31 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Mar 2026 00:39:42 +0000</lastBuildDate>
     <atom:link href="https://yywar.github.io/strate-weekly/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Vous pensez être 20% plus rapide. Vous êtes 19% plus lent.</title>
+      <link>https://yywar.github.io/strate-weekly/articles/perception-gap-ia-code.html</link>
+      <guid>https://yywar.github.io/strate-weekly/articles/perception-gap-ia-code.html</guid>
+      <pubDate>2026-03-23T00:00:00+00:00</pubDate>
+      <description>Une étude contrôlée montre que les développeurs assistés par IA sont 19% plus lents — mais croient être 20% plus rapides. Ce fossé de 40 points produit du code dangereux, submerge l'open source, et coûte 40 milliards de dollars d'investissements sans retour. Ni remplacement ni inutilité : le vrai danger est l'illusion de productivité.</description>
+    </item>
     <item>
       <title>Quand l'infrastructure prend parti</title>
       <link>https://yywar.github.io/strate-weekly/articles/infrastructure-prend-parti.html</link>
