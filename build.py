@@ -238,7 +238,44 @@ def build():
     (ROOT / "about.html").write_text(about)
     print("  Built about.html")
 
+    # Build sitemap.xml
+    sitemap = sitemap_xml(ARTICLES)
+    (ROOT / "sitemap.xml").write_text(sitemap)
+    print("  Built sitemap.xml")
+
+    # Build robots.txt
+    robots = f"User-agent: *\nAllow: /\n\nSitemap: {SITE_URL}/sitemap.xml\n"
+    (ROOT / "robots.txt").write_text(robots)
+    print("  Built robots.txt")
+
     print(f"\nDone. {len(ARTICLES)} articles built.")
+
+
+def sitemap_xml(articles: list) -> str:
+    now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S+00:00")
+    urls = [f"""  <url>
+    <loc>{SITE_URL}/</loc>
+    <lastmod>{now}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>"""]
+    for a in articles:
+        urls.append(f"""  <url>
+    <loc>{SITE_URL}/articles/{a['slug']}.html</loc>
+    <lastmod>{a['date']}T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>""")
+    urls.append(f"""  <url>
+    <loc>{SITE_URL}/about.html</loc>
+    <lastmod>{now}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>""")
+    return f"""<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{chr(10).join(urls)}
+</urlset>"""
 
 
 def about_page() -> str:
