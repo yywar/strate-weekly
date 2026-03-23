@@ -19,6 +19,14 @@ OUT_ARTICLES = ROOT / "articles"
 # Article metadata - add new articles here
 ARTICLES = [
     {
+        "slug": "goulot-interface",
+        "title": "Le goulot est toujours a l'interface",
+        "subtitle": "BYD, Bram Cohen, Steve Krouse et METR convergent vers le meme constat : le throughput n'est jamais le facteur limitant",
+        "date": "2026-03-23",
+        "summary": "Un connecteur de charge, un algorithme de merge, un medium de precision, une etude de productivite. Quatre domaines, un seul pattern : le goulot d'etranglement est toujours a l'interface entre les composants, jamais dans le debit. La loi d'Amdahl, appliquee aux interfaces, explique pourquoi.",
+        "src": "article_009_interfaces.md",
+    },
+    {
         "slug": "ciblage-cognitif-openai",
         "title": "Quand la publicité entre dans votre raisonnement",
         "subtitle": "OpenAI cible les pubs sur votre processus de pensée, une catégorie nouvelle de ciblage qui n'a pas de cadre réglementaire",

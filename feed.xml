@@ -5,8 +5,15 @@
     <link>https://yywar.github.io/strate-weekly</link>
     <description>Analyse tech hebdomadaire. Ce que les tendances révèlent, pas ce qu'elles annoncent.</description>
     <language>fr</language>
-    <lastBuildDate>Mon, 23 Mar 2026 07:43:55 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Mar 2026 07:49:21 +0000</lastBuildDate>
     <atom:link href="https://yywar.github.io/strate-weekly/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Le goulot est toujours a l'interface</title>
+      <link>https://yywar.github.io/strate-weekly/articles/goulot-interface.html</link>
+      <guid>https://yywar.github.io/strate-weekly/articles/goulot-interface.html</guid>
+      <pubDate>2026-03-23T00:00:00+00:00</pubDate>
+      <description>Un connecteur de charge, un algorithme de merge, un medium de precision, une etude de productivite. Quatre domaines, un seul pattern : le goulot d'etranglement est toujours a l'interface entre les composants, jamais dans le debit. La loi d'Amdahl, appliquee aux interfaces, explique pourquoi.</description>
+    </item>
     <item>
       <title>Quand la publicité entre dans votre raisonnement</title>
       <link>https://yywar.github.io/strate-weekly/articles/ciblage-cognitif-openai.html</link>
