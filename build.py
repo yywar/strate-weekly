@@ -119,6 +119,22 @@ def md_to_html(md_path: Path) -> str:
 def article_template(title: str, date: str, body_html: str, slug: str = "", summary: str = "") -> str:
     desc = escape(summary) if summary else escape(title)
     article_url = f"{SITE_URL}/articles/{slug}.html" if slug else SITE_URL
+    json_ld = json.dumps({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "name": title,
+        "headline": title,
+        "author": {"@type": "Person", "name": "Strate"},
+        "publisher": {
+            "@type": "Organization",
+            "name": "Strate Weekly",
+            "url": "https://strateweekly.substack.com"
+        },
+        "datePublished": date,
+        "description": summary if summary else title,
+        "inLanguage": "fr",
+        "url": article_url
+    }, ensure_ascii=False)
     return f"""<!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -136,6 +152,7 @@ def article_template(title: str, date: str, body_html: str, slug: str = "", summ
 <meta name="twitter:description" content="{desc}">
 <link rel="stylesheet" href="../style.css">
 <link rel="alternate" type="application/rss+xml" title="{SITE_TITLE}" href="{SITE_URL}/feed.xml">
+<script type="application/ld+json">{json_ld}</script>
 </head>
 <body>
 <div class="container">
